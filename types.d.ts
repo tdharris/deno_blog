@@ -66,7 +66,7 @@ export interface BlogSettings {
   /** UnoCSS configuration */
   unocss?: UnoConfig;
   /** Color scheme */
-  theme?: "dark" | "light" | "auto";
+  theme?: "dark" | "auto";
   /**
    * URL to favicon. Can be relative.
    * Supports dark and light mode variants through "prefers-color-scheme".

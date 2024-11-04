@@ -173,8 +173,7 @@ export async function configureBlog(
   let directory;
 
   try {
-    // https://github.com/denoland/deploy_feedback/issues/724
-    const blogPath = fromFileUrl(url);
+    const blogPath = URL.canParse(url) ? fromFileUrl(url) : url;
     directory = dirname(blogPath);
   } catch (e) {
     console.error(e);
